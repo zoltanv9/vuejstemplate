@@ -1,0 +1,29 @@
+{
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "package.json"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    /* Basic Options */
+    "outDir": "dist",
+    /* Module Resolution Options */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+
+}
